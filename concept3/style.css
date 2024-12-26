@@ -1,0 +1,234 @@
+:root {
+    --pav-blue: #0f007c;
+    --pav-gray: rgb(235, 235, 235);
+}
+
+@font-face {
+    font-family: Octobre;
+    src: url(octobre_2/Octobre-Regular.otf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Alfa-Owner;
+    src: url(alfaowner.com_script.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(Inter.ttf);
+    font-weight: 400;
+    font-style: regular;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(Inter.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@keyframes glide {
+    0% {
+        -webkit-transform: translateX(0) translateY(0) rotate(0);
+    }
+    10% {
+        -webkit-transform: translateX(-3000px) translateY(-1000px)
+            rotate(135deg);
+    }
+    20% {
+        -webkit-transform: translateX(-1000px) translateY(-500px) rotate(45deg);
+    }
+    30% {
+        -webkit-transform: translateX(-5000px) translateY(-2500px)
+            rotate(225deg);
+    }
+    40% {
+        -webkit-transform: translateX(-2000px) translateY(-1500px) rotate(90deg);
+    }
+    50% {
+        -webkit-transform: translateX(-7000px) translateY(-3500px)
+            rotate(315deg);
+    }
+    60% {
+        -webkit-transform: translateX(-4000px) translateY(-2000px)
+            rotate(180deg);
+    }
+    70% {
+        -webkit-transform: translateX(-9000px) translateY(-4500px)
+            rotate(405deg);
+    }
+    80% {
+        -webkit-transform: translateX(-6000px) translateY(-3000px)
+            rotate(270deg);
+    }
+    90% {
+        -webkit-transform: translateX(-1000px) translateY(-5000px)
+            rotate(450deg);
+    }
+    100% {
+        -webkit-transform: translateX(-8000px) translateY(-4000px)
+            rotate(360deg);
+    }
+}
+
+body {
+    padding: 0;
+    padding-top: 70px;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--pav-gray);
+}
+
+.bg {
+    background-color: var(--pav-gray);
+    width: 5000px;
+    aspect-ratio: 1;
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    animation: glide ease-in-out 800s infinite;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.top-bar {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    font-size: 16pt;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* gap: 1%; */
+    .divider {
+        width: 10px;
+        user-select: none;
+        color: var(--pav-blue);
+        font-family: Alfa-Owner;
+    }
+    a {
+        color: var(--pav-blue);
+        font-family: Alfa-Owner;
+        text-decoration: none;
+    }
+}
+
+.logo {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 18px;
+
+    img {
+        height: 100%;
+    }
+
+    .languages {
+        position: relative;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 60px;
+        }
+
+        a {
+            color: var(--pav-blue);
+            position: absolute;
+            font-family: Alfa-Owner;
+            font-size: 17pt;
+            text-decoration: none;
+        }
+
+        :nth-child(2) {
+            top: 14px;
+            left: 23px;
+            transform: rotate(-18deg);
+        }
+
+        :nth-child(3) {
+            top: 18px;
+            left: 66px;
+            transform: rotate(8deg);
+        }
+    }
+}
+
+.title {
+    height: fit-content;
+    h1 {
+        color: var(--pav-blue);
+        font-size: 37pt;
+        margin-top: 30px;
+        text-indent: -30px;
+        margin-left: 40px;
+        line-height: 60px;
+        font-family: Octobre;
+    }
+}
+
+.description {
+    width: 100%;
+    margin: 0 15px;
+    font-family: Inter;
+    font-size: 14pt;
+}
+
+.text {
+    width: 100%;
+
+    h2 {
+        font-family: Alfa-Owner;
+        text-align: right;
+        margin-right: 13px;
+        color: var(--pav-blue);
+    }
+
+    p {
+        width: 80%;
+        margin: 15px;
+        font-family: Inter;
+        font-size: 12pt;
+    }
+}
+
+.down {
+    transform: translateY(200%) !important;
+}
+
+.back-to-top {
+    position: fixed;
+    height: fit-content;
+    aspect-ratio: 1;
+    bottom: 30px;
+    right: 15px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    /* backdrop-filter: blur(10px); */
+    border-radius: 15px;
+    padding: 5px 10px;
+    transform: translateY(0);
+    transition: transform 0.3s;
+
+    .pointer {
+        color: var(--pav-blue);
+        width: 30px;
+    }
+
+    p {
+        font-family: Alfa-Owner;
+        font-size: 12pt;
+        margin: 0;
+        color: var(--pav-blue);
+    }
+}

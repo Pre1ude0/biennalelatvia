@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Papyrus;
+    src: url(papyrus.ttf);
+}
+
+@keyframes glide {
+    0% {
+        -webkit-transform: translateX(0) translateY(0) rotate(0);
+    }
+    10% {
+        -webkit-transform: translateX(-3000px) translateY(-1000px)
+            rotate(135deg);
+    }
+    20% {
+        -webkit-transform: translateX(-1000px) translateY(-500px) rotate(45deg);
+    }
+    30% {
+        -webkit-transform: translateX(-5000px) translateY(-2500px)
+            rotate(225deg);
+    }
+    40% {
+        -webkit-transform: translateX(-2000px) translateY(-1500px) rotate(90deg);
+    }
+    50% {
+        -webkit-transform: translateX(-7000px) translateY(-3500px)
+            rotate(315deg);
+    }
+    60% {
+        -webkit-transform: translateX(-4000px) translateY(-2000px)
+            rotate(180deg);
+    }
+    70% {
+        -webkit-transform: translateX(-9000px) translateY(-4500px)
+            rotate(405deg);
+    }
+    80% {
+        -webkit-transform: translateX(-6000px) translateY(-3000px)
+            rotate(270deg);
+    }
+    90% {
+        -webkit-transform: translateX(-1000px) translateY(-5000px)
+            rotate(450deg);
+    }
+    100% {
+        -webkit-transform: translateX(-8000px) translateY(-4000px)
+            rotate(360deg);
+    }
+}
+
+/* body {
+    overflow: hidden;
+} */
+
+#wallpaper {
+    width: 5000px;
+    aspect-ratio: 1;
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    animation: glide ease-in-out 600s infinite;
+}
+
+h1 {
+    font-size: 20pt;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+p {
+    width: 700px;
+    margin-left: 50px;
+    /* backdrop-filter: blur(10px); */
+}
