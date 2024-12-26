@@ -29,6 +29,12 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: Inconstant;
+    src: url(Inconstant-Regular.otf);
+    font-weight: 400;
+}
+
 @keyframes glide {
     0% {
         -webkit-transform: translateX(0) translateY(0) rotate(0);
@@ -179,7 +185,8 @@ body {
 .description {
     width: 100%;
     margin: 0 15px;
-    font-family: Inter;
+    font-family: Inconstant;
+    font-weight: bold;
     font-size: 14pt;
 }
 
@@ -196,7 +203,7 @@ body {
     p {
         width: 80%;
         margin: 15px;
-        font-family: Inter;
+        font-family: Inconstant;
         font-size: 12pt;
     }
 }
