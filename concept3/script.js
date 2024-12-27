@@ -12,10 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
   background.style.animationDelay = `-${startTime}s`;
 
   document.addEventListener("scroll", function () {
-    if (window.scrollY < 100) {
-      backToTopButton.classList.add("down");
-    } else {
-      backToTopButton.classList.remove("down");
+    if (window.innerWidth < 768) {
+      if (window.scrollY < 100) {
+        backToTopButton.classList.add("down");
+      } else {
+        backToTopButton.classList.remove("down");
+      }
     }
   });
 });
