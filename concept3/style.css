@@ -87,6 +87,13 @@ body {
     background-color: var(--pav-gray);
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: Inconstant;
+}
+
 .bg {
     background-color: var(--pav-gray);
     width: 5000px;

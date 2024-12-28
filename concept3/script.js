@@ -20,6 +20,27 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
+
+  window.addEventListener("hashchange", function (e) {
+    if (window.location.hash === "#statement") {
+      document
+        .getElementById("statementId")
+        .scrollIntoView({ behavior: "smooth", block: "center" });
+    } else if (window.location.hash === "#team") {
+      document
+        .getElementById("teamId")
+        .scrollIntoView({ behavior: "smooth", block: "center" });
+    } else if (window.location.hash === "#events") {
+      document
+        .getElementById("eventsId")
+        .scrollIntoView({ behavior: "smooth", block: "center" });
+    } else if (window.location.hash === "#press") {
+      document.getElementById("pressId").scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }
+  });
 });
 
 window.scrollToTop = scrollToTop;
