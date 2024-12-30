@@ -85,6 +85,8 @@ body {
     margin: 0;
     overflow-x: hidden;
     background-color: var(--pav-gray);
+    display: flex;
+    justify-content: center;
 }
 
 ul {
@@ -106,7 +108,7 @@ ul {
 }
 
 .content {
-    width: 100%;
+    /* width: fit-content; */
     height: 100%;
 }
 
@@ -221,9 +223,12 @@ ul {
 }
 
 .paragraphs {
+    width: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 @media screen and (max-width: 800px) {
@@ -259,8 +264,8 @@ ul {
 
     h2 {
         font-family: Alfa-Owner;
-        text-align: right;
-        margin-right: 13px;
+        text-align: center;
+        /* margin-right: 13px; */
         color: var(--pav-blue);
     }
 

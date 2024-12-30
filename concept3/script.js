@@ -1,8 +1,44 @@
 let backToTopButton = document.getElementById("btt");
+let content = document.getElementsByClassName("content")[0];
+const yOffset = -50;
+
+function setSize() {
+  if (window.innerWidth > 768) {
+    content.style.width = `${530 * Math.floor(window.innerWidth / 530)}px`;
+  }
+}
 
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
   backToTopButton.classList.remove("down");
+}
+
+function scrollToItem(item) {
+  if (item === "statement") {
+    let y =
+      document.getElementById("statementId").getBoundingClientRect().top +
+      window.scrollY +
+      yOffset;
+    scrollTo({ top: y, behavior: "smooth", inline: "start", block: "start" });
+  } else if (item === "team") {
+    let y =
+      document.getElementById("teamId").getBoundingClientRect().top +
+      window.scrollY +
+      yOffset;
+    scrollTo({ top: y, behavior: "smooth", inline: "start", block: "start" });
+  } else if (item === "events") {
+    let y =
+      document.getElementById("eventsId").getBoundingClientRect().top +
+      window.scrollY +
+      yOffset;
+    scrollTo({ top: y, behavior: "smooth", inline: "start", block: "start" });
+  } else if (item === "press") {
+    let y =
+      document.getElementById("pressId").getBoundingClientRect().top +
+      window.scrollY +
+      yOffset;
+    scrollTo({ top: y, behavior: "smooth", inline: "start", block: "start" });
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -21,26 +57,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  window.addEventListener("hashchange", function (e) {
-    if (window.location.hash === "#statement") {
-      document
-        .getElementById("statementId")
-        .scrollIntoView({ behavior: "smooth", block: "center" });
-    } else if (window.location.hash === "#team") {
-      document
-        .getElementById("teamId")
-        .scrollIntoView({ behavior: "smooth", block: "center" });
-    } else if (window.location.hash === "#events") {
-      document
-        .getElementById("eventsId")
-        .scrollIntoView({ behavior: "smooth", block: "center" });
-    } else if (window.location.hash === "#press") {
-      document.getElementById("pressId").scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-      });
-    }
-  });
+  setSize();
+
+  window.addEventListener("resize", setSize);
 });
 
 window.scrollToTop = scrollToTop;
+window.scrollToItem = scrollToItem;
