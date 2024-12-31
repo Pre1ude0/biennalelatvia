@@ -1,3 +1,30 @@
+.lang-en {
+    .it {
+        display: none !important;
+    }
+    .lv {
+        display: none !important;
+    }
+}
+
+.lang-lv {
+    .en {
+        display: none !important;
+    }
+    .it {
+        display: none !important;
+    }
+}
+
+.lang-it {
+    .en {
+        display: none !important;
+    }
+    .lv {
+        display: none !important;
+    }
+}
+
 :root {
     --pav-blue: #0f007c;
     --pav-gray: rgb(235, 235, 235);
@@ -209,7 +236,7 @@ ul {
 
             :nth-child(2) {
                 top: 14px;
-                left: 23px;
+                left: 25px;
                 transform: rotate(-18deg);
             }
 

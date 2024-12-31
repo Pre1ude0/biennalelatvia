@@ -11,37 +11,67 @@
     </head>
     <body>
         <div class="top-bar">
-            <a href="#statement" onclick="scrollToItem('statement')">Statement</a>
+            <a onclick="scrollToItem('statement')">Statement</a>
             <div class="divider">-</div>
-            <a href="#team" onclick="scrollToItem('team')">Team</a>
+            <a onclick="scrollToItem('team')">Team</a>
             <div class="divider">-</div>
-            <a href="#events" onclick="scrollToItem('events')">Events</a>
+            <a onclick="scrollToItem('events')">Events</a>
             <div class="divider">-</div>
-            <a href="#press" onclick="scrollToItem('press')">Press</a>
+            <a onclick="scrollToItem('press')">Press</a>
         </div>
         <div class="content">
             <div class="logo">
-                <div class="languages">
+                <div class="languages en">
                     <img src="lenta.svg" /><a href="#lv">Lv</a
                     ><a href="#it">It</a>
                 </div>
+                <div class="languages lv">
+                    <img src="lenta.svg" /><a href="#en">En</a
+                    ><a href="#it">It</a>
+                </div>
+                <div class="languages it">
+                    <img src="lenta.svg" /><a href="#lv">Lv</a
+                    ><a href="#en">En</a>
+                </div>
                 <img src="logo.png" />
             </div>
-            <div class="title">
+            <div class="title en">
                 <h1>
                     LANDSCAPE <br />
                     OF DEFENCE
                 </h1>
             </div>
-            <div class="description">
+            <div class="title lv">
+                <h1>
+                    AIZSARDZĪBAS <br />
+                    AINAVA
+                </h1>
+            </div>
+            <div class="title it">
+                <h1>
+                    PAESAGGIO <br />
+                    DI DIFFESA
+                </h1>
+            </div>
+            <div class="description en">
                 <p>
                     Latvian Pavilion<br />
                     19th International Architecture Exhibition<br />
                     La Biennale Architettura 2025
                 </p>
             </div>
-            <div class="paragraphs">
-                <div class="text" id="statementId">
+            <div class="description lv">
+                Latvijas paviljons<br />
+                19. starptautiskā arhitektūras izstāde<br />
+                La Biennale Architettura 2025
+            </div>
+            <div class="description it">
+                Padiglione Lettonia<br />
+                19. mostra internazionale di architettura<br />
+                La Biennale Architettura 2025
+            </div>
+            <div class="paragraphs en">
+                <div class="text" id="statementId-en">
                     <h2>Curatorial statement</h2>
                     <p>
                         The exhibition focuses on the military defence of the
@@ -87,16 +117,19 @@
                         safe.
                     </p>
                 </div>
-                <div class="text" id="teamId">
+                <div class="text" id="teamId-en">
                     <h2>Team</h2>
                     <h3>Curators:</h3>
                     <p>Liene Jākobsone, Ilka Ruby</p>
                     <h3>Design team:</h3>
-                    <p>
-                        SAMPLING + NOMAD Manten Devriendt, Marija Katrīna Dambe,
-                        Florian Betat, Solvita Kārkliņa, Zane Saulīte-Zvaigzne,
-                        Laine Lazda
-                    </p>
+                    <ul>
+                        <li>SAMPLING + NOMAD</li>
+                        <li>
+                            Manten Devriendt, Marija Katrīna Dambe, Florian
+                            Betat, Solvita Kārkliņa, Zane Saulīte-Zvaigzne,
+                            Laine Lazda
+                        </li>
+                    </ul>
                     <h3>Website development:</h3>
                     <p>No content</p>
                     <h3>Commissioner:</h3>
@@ -105,22 +138,20 @@
                         Latvia
                     </p>
                 </div>
-                <div class="text" id="eventsId">
+                <div class="text" id="eventsId-en">
                     <h2>Events</h2>
-                    <p>
-                        Public Debates<br />
-                        Press event <br />
-                        Opening
-                    </p>
+                    <ul>
+                        <li>Public Debates</li>
+                        <li>Press event</li>
+                        <li>Opening</li>
+                    </ul>
                 </div>
-                <div class="text" id="pressId">
+                <div class="text" id="pressId-en">
                     <h2>Press</h2>
-                    <p>
-                        <ul>
-                            <li>Inquiries: press@sampling.lv</li>
-                            <li><a>Download press kit</a></li>
-                        </ul>
-                    </p>
+                    <ul>
+                        <li>Inquiries: press@sampling.lv</li>
+                        <li><a>Download press kit</a></li>
+                    </ul>
                 </div>
                 <div class="text">
                     <h2>Contacts</h2>
@@ -134,8 +165,12 @@
                     <h2>Visit</h2>
                     <ul>
                         <li>Arsenale di Venezia</li>
-                        <li>Opening hours: 11 am - 7 pm (last admission 6:45 pm)</li>
-                        <li>Closed on Mondays (except 12 May and 17 November)</li>
+                        <li>
+                            Opening hours: 11 am - 7 pm (last admission 6:45 pm)
+                        </li>
+                        <li>
+                            Closed on Mondays (except 12 May and 17 November)
+                        </li>
                     </ul>
                 </div>
                 <div class="text">
@@ -147,7 +182,232 @@
                     <p>No content</p>
                 </div>
             </div>
+            <div class="paragraphs lv">
+                <div class="text" id="statementId-lv">
+                    <h2>Kuratoru vēstījums</h2>
+                    <p>
+                        The exhibition focuses on the military defence of the
+                        Latvian state from the perspectives of architecture,
+                        landscape and urban planning.
+                    </p>
+                    <p>
+                        In response to the recent geopolitical events, work is
+                        underway to strengthen the country's physical borders to
+                        prevent a massive military attack by land. To this end,
+                        various defence elements, each with a specific location
+                        and function, are deployed in a coherent system along
+                        the country's eastern external border. These include
+                        barbed wire, fences, anti-tank "hedgehogs", concrete
+                        "dragon's teeth", anti-tank trenches and mines. Other
+                        military defence measures in Latvia include public
+                        information and training on how to deal with crises and
+                        war, as well as large-scale military mobilisation – the
+                        activation of reservists and the National Guard, and the
+                        reintroduction of compulsory military service.
+                    </p>
+                    <p>
+                        With this exhibition, we want to highlight the specific
+                        conditions of Latvia’s geographical situation, which
+                        force its population to live under the constant threat
+                        of attack. It aims to offer the international
+                        architectural discourse a study of the relationship
+                        between military defence and spatial planning in the
+                        Latvian context. We want to invite architects to
+                        evaluate their role in the defence of the country and to
+                        draw attention to the impact of defence measures on the
+                        environment and landscape identity. On the other hand,
+                        we involve policy makers and military defence
+                        specialists in the conversation, encouraging them to pay
+                        attention to the physical footprint of defence
+                        strategies on Latvian territory and the emotional impact
+                        on the country's population.
+                    </p>
+                    <p>
+                        National defence is an ongoing process that we must
+                        learn to accept and acknowledge. It should not make us
+                        fear the proximity of war, but reassure us that we are
+                        safe.
+                    </p>
+                </div>
+                <div class="text" id="teamId-lv">
+                    <h2>Komanda</h2>
+                    <h3>Kuratori:</h3>
+                    <p>Liene Jākobsone, Ilka Ruby</p>
+                    <h3>Dizaina komanda:</h3>
+                    <ul>
+                        <li>SAMPLING + NOMAD</li>
+                        <li>
+                            Manten Devriendt, Marija Katrīna Dambe, Florian
+                            Betat, Solvita Kārkliņa, Zane Saulīte-Zvaigzne,
+                            Laine Lazda
+                        </li>
+                    </ul>
+                    <h3>Mājaslapas izstrāde:</h3>
+                    <p>Nav datu</p>
+                    <h3>Komisārs:</h3>
+                    <p>
+                        Jānis Dripe, Ministry of Culture of the Republic of
+                        Latvia
+                    </p>
+                </div>
+                <div class="text" id="eventsId-lv">
+                    <h2>Notikumi</h2>
+                    <ul>
+                        <li>Public Debates</li>
+                        <li>Press event</li>
+                        <li>Opening</li>
+                    </ul>
+                </div>
+                <div class="text" id="pressId-lv">
+                    <h2>Medijiem</h2>
+                    <ul>
+                        <li>Inquiries: press@sampling.lv</li>
+                        <li><a>Download press kit</a></li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <h2>Kontakti</h2>
+                    <ul>
+                        <li>info@sampling.lv</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <h2>Apmeklē</h2>
+                    <ul>
+                        <li>Arsenale di Venezia</li>
+                        <li>
+                            Opening hours: 11 am - 7 pm (last admission 6:45 pm)
+                        </li>
+                        <li>
+                            Closed on Mondays (except 12 May and 17 November)
+                        </li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <h2>Pateicība</h2>
+                    <p>Andreas Ruby, Elīna Kursīte, Māris Tūtins, …</p>
+                </div>
+                <div class="text">
+                    <h2>Atbalstītāji</h2>
+                    <p>Nav datu</p>
+                </div>
+            </div>
+            <div class="paragraphs it">
+                <div class="text" id="statementId-it">
+                    <h2>Curatorial statement</h2>
+                    <p>
+                        The exhibition focuses on the military defence of the
+                        Latvian state from the perspectives of architecture,
+                        landscape and urban planning.
+                    </p>
+                    <p>
+                        In response to the recent geopolitical events, work is
+                        underway to strengthen the country's physical borders to
+                        prevent a massive military attack by land. To this end,
+                        various defence elements, each with a specific location
+                        and function, are deployed in a coherent system along
+                        the country's eastern external border. These include
+                        barbed wire, fences, anti-tank "hedgehogs", concrete
+                        "dragon's teeth", anti-tank trenches and mines. Other
+                        military defence measures in Latvia include public
+                        information and training on how to deal with crises and
+                        war, as well as large-scale military mobilisation – the
+                        activation of reservists and the National Guard, and the
+                        reintroduction of compulsory military service.
+                    </p>
+                    <p>
+                        With this exhibition, we want to highlight the specific
+                        conditions of Latvia’s geographical situation, which
+                        force its population to live under the constant threat
+                        of attack. It aims to offer the international
+                        architectural discourse a study of the relationship
+                        between military defence and spatial planning in the
+                        Latvian context. We want to invite architects to
+                        evaluate their role in the defence of the country and to
+                        draw attention to the impact of defence measures on the
+                        environment and landscape identity. On the other hand,
+                        we involve policy makers and military defence
+                        specialists in the conversation, encouraging them to pay
+                        attention to the physical footprint of defence
+                        strategies on Latvian territory and the emotional impact
+                        on the country's population.
+                    </p>
+                    <p>
+                        National defence is an ongoing process that we must
+                        learn to accept and acknowledge. It should not make us
+                        fear the proximity of war, but reassure us that we are
+                        safe.
+                    </p>
+                </div>
+                <div class="text" id="teamId-lv">
+                    <h2>Team</h2>
+                    <h3>Curatori:</h3>
+                    <p>Liene Jākobsone, Ilka Ruby</p>
+                    <h3>Design team:</h3>
+                    <ul>
+                        <li>SAMPLING + NOMAD</li>
+                        <li>
+                            Manten Devriendt, Marija Katrīna Dambe, Florian
+                            Betat, Solvita Kārkliņa, Zane Saulīte-Zvaigzne,
+                            Laine Lazda
+                        </li>
+                    </ul>
+                    <h3>Website development:</h3>
+                    <p>Nessun dato</p>
+                    <h3>Commissario:</h3>
+                    <p>
+                        Jānis Dripe, Ministry of Culture of the Republic of
+                        Latvia
+                    </p>
+                </div>
+                <div class="text" id="eventsId-lv">
+                    <h2>Eventi</h2>
+                    <ul>
+                        <li>Public Debates</li>
+                        <li>Press event</li>
+                        <li>Opening</li>
+                    </ul>
+                </div>
+                <div class="text" id="pressId-lv">
+                    <h2>Stampa</h2>
+                    <ul>
+                        <li>Inquiries: press@sampling.lv</li>
+                        <li><a>Download press kit</a></li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <h2>Contatti</h2>
+                    <ul>
+                        <li>info@sampling.lv</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <h2>Vista</h2>
+                    <ul>
+                        <li>Arsenale di Venezia</li>
+                        <li>
+                            Opening hours: 11 am - 7 pm (last admission 6:45 pm)
+                        </li>
+                        <li>
+                            Closed on Mondays (except 12 May and 17 November)
+                        </li>
+                    </ul>
+                </div>
+                <div class="text">
+                    <h2>Ringrazimenti</h2>
+                    <p>Andreas Ruby, Elīna Kursīte, Māris Tūtins, …</p>
+                </div>
+                <div class="text">
+                    <h2>Sponsor</h2>
+                    <p>Nessun dato</p>
+                </div>
+            </div>
         </div>
+
         <div class="back-to-top down" id="btt" onclick="scrollToTop()">
             <img class="pointer" src="roka.svg" />
             <p>back</p>
