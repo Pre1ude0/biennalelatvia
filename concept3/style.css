@@ -31,9 +31,9 @@
 }
 
 @font-face {
-    font-family: Octobre;
-    src: url(octobre_2/Octobre-Regular.otf);
-    font-weight: 200;
+		font-family: Antiquarian, sans-serif;
+		font-weight: 400;
+		font-style: normal;
 }
 
 @font-face {
@@ -265,7 +265,7 @@ ul {
         text-indent: -30px;
         margin-left: 40px;
         line-height: 60px;
-        font-family: Octobre;
+        font-family: Antiquarian;
     }
 }
 
