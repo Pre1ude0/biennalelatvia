@@ -131,6 +131,14 @@ ul {
     height: 100%;
     width: 100%;
     max-width: 1000px;
+	position: relative;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-family: Inconstant;
 }
 
 .top-bar {
@@ -294,6 +302,8 @@ ul {
         text-align: left;
         margin: 0;
         margin-bottom: 5px;
+		margin-top: 20px;
+		margin-left: 10px;
     }
 
     h4 {
@@ -301,7 +311,6 @@ ul {
         font-size: 12pt;
         text-align: left;
         margin: 0;
-        margin-left: 10px;
     }
 
     ul {
