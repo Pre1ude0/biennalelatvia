@@ -52,6 +52,7 @@ function generateMobileLayout() {
 
     blocks.forEach((block) => {
         mobileSection.appendChild(block.cloneNode(true));
+		block.id = block.id + "-bookmark";
     });
 
 	mobileSection.appendChild(document.querySelector(".logos").cloneNode(true));
@@ -89,7 +90,7 @@ function scrollToItem(item) {
         window.scrollY +
         yOffset;
 
-    scrollTo({ top: y, behavior: "smooth", inline: "start", block: "start" });
+    scrollTo({ top: y, behavior: "smooth", block: "start" });
 }
 
 document.addEventListener("DOMContentLoaded", function () {

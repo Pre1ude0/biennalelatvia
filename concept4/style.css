@@ -106,7 +106,7 @@ body {
     background-color: var(--pav-gray);
     display: flex;
     justify-content: center;
-	position: relative;
+    position: relative;
 }
 
 ul {
@@ -132,27 +132,28 @@ ul {
     height: 100%;
     width: 100%;
     max-width: 1000px;
-	position: relative;
+    position: relative;
 }
 
 .footer {
-	position: absolute;
-	left: 10px;
-	top: calc(100% - 50px);
-	font-family: Inconstant;
-	width: fit-content;
+    position: absolute;
+    left: 10px;
+    top: calc(100% - 50px);
+    font-family: Inconstant;
+    width: fit-content;
 
-	a {
-		color: black;	
-		text-decoration: underline;
+    a {
+        color: black;
+        text-decoration: underline;
 
-		&:hover {
-			text-decoration: none;
-		}
-	}
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 .top-bar {
+	z-index: 10;
     top: 0;
     left: 0;
     position: fixed;
@@ -170,10 +171,12 @@ ul {
         color: var(--pav-blue);
         font-family: Alfa-Owner;
     }
-    a {
+    p {
         color: var(--pav-blue);
         font-family: Alfa-Owner;
         text-decoration: none;
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -290,7 +293,7 @@ ul {
     font-family: Inconstant;
     font-weight: bold;
     font-size: 13pt;
-	margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .block {
@@ -307,8 +310,8 @@ ul {
         text-align: left;
         margin: 0;
         margin-bottom: 5px;
-		margin-top: 20px;
-		margin-left: 10px;
+        margin-top: 20px;
+        margin-left: 10px;
     }
 
     h4 {
@@ -326,18 +329,18 @@ ul {
         /* margin: 15px; */
         font-family: Inconstant;
         font-size: 12pt;
-		margin: 0;
-		margin-bottom: 10px;
+        margin: 0;
+        margin-bottom: 10px;
     }
 
-	a {
-		color: black;	
-		text-decoration: underline;
+    a {
+        color: black;
+        text-decoration: underline;
 
-		&:hover {
-			text-decoration: none;
-		}
-	}
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -387,12 +390,12 @@ ul {
 }
 
 .paragraphs {
-	width: fit-content;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: flex-start;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .section {
@@ -400,49 +403,48 @@ ul {
 }
 
 .block {
-	padding: 15px;
+    padding: 15px;
 }
 
 .logos {
-	width: calc(100% - 40px);
-	display: flex;
-	flex-wrap: wrap;
-	height: fit-content;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 100px;
-	padding: 0 20px;
-	gap: 20px;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 0 20px;
+    gap: 20px;
 
-	img {
-		display: block;
-		max-height: 90px;
-		max-width: 150px;
-		object-fit: contain;
-	}
+    img {
+        display: block;
+        max-height: 90px;
+        max-width: 150px;
+        object-fit: contain;
+    }
 }
 
 #mobile-section {
-	display: none;
-	position: relative;
+    display: none;
+    position: relative;
 }
 
 @media screen and (max-width: 800px) {
-	
-	body {
-		flex-direction: column;
-	}
+    body {
+        flex-direction: column;
+    }
 
-	.paragraphs {
-		display: none;
-	}
+    .paragraphs {
+        display: none;
+    }
 
-	#mobile-section {
-		display: block;
-		width: 100%;
-	}
+    #mobile-section {
+        display: block;
+        width: 100%;
+    }
 
-	.blank {
-		display: none;
-	}
+    .blank {
+        display: none;
+    }
 }
