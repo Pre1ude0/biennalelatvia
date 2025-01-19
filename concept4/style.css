@@ -106,6 +106,7 @@ body {
     background-color: var(--pav-gray);
     display: flex;
     justify-content: center;
+	position: relative;
 }
 
 ul {
@@ -136,21 +137,17 @@ ul {
 
 .footer {
 	position: absolute;
-	bottom: 0;
-	left: 0;
+	left: 10px;
+	top: calc(100% - 50px);
 	font-family: Inconstant;
+	width: fit-content;
 
 	a {
-		color: black;
-		text-decoration: none;
-		transition: background-color 0.5s, box-shadow 0.5s;
-		padding: 5px 5px;
+		color: black;	
+		text-decoration: underline;
 
 		&:hover {
-			background-color: black;
-			color: white;
-			box-shadow: 0 0 5px black;
-			transition: none;
+			text-decoration: none;
 		}
 	}
 }
@@ -274,12 +271,6 @@ ul {
     align-items: flex-start;
 }
 
-@media screen and (max-width: 800px) {
-    .paragraphs {
-        flex-direction: column;
-    }
-}
-
 .title {
     height: fit-content;
     h1 {
@@ -295,7 +286,7 @@ ul {
 
 .description {
     width: calc(100% - 30px);
-    margin: 0 15px;
+    margin: 15px;
     font-family: Inconstant;
     font-weight: bold;
     font-size: 13pt;
@@ -400,7 +391,7 @@ ul {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: flex-start;
 }
 
@@ -410,4 +401,48 @@ ul {
 
 .block {
 	padding: 15px;
+}
+
+.logos {
+	width: calc(100% - 40px);
+	display: flex;
+	flex-wrap: wrap;
+	height: fit-content;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 100px;
+	padding: 0 20px;
+	gap: 20px;
+
+	img {
+		display: block;
+		max-height: 90px;
+		max-width: 150px;
+		object-fit: contain;
+	}
+}
+
+#mobile-section {
+	display: none;
+	position: relative;
+}
+
+@media screen and (max-width: 800px) {
+	
+	body {
+		flex-direction: column;
+	}
+
+	.paragraphs {
+		display: none;
+	}
+
+	#mobile-section {
+		display: block;
+		width: 100%;
+	}
+
+	.blank {
+		display: none;
+	}
 }

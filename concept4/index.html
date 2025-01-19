@@ -74,8 +74,8 @@
             </div>
             <div class="paragraphs">
                 <div class="section l">
-					<!-- Curatorial statiment -->
-                    <div class="block en">
+                    <!-- Curatorial statiment -->
+                    <div class="block en" id="statement-en" ordernum="1">
                         <h2>Curatorial statement</h2>
                         <p>
                             What does it mean to live on NATO's external border
@@ -130,7 +130,7 @@
                             we are safe.
                         </p>
                     </div>
-                    <div class="block lv">
+                    <div class="block lv" id="statement-lv" ordernum="1">
                         <h2>Kuratoru vēstījums</h2>
                         <p>
                             Ko nozīmē dzīvot uz NATO ārējās robežas ģeopolitiska
@@ -181,7 +181,7 @@
                             var arī sniegt pārliecību, ka esam drošībā.
                         </p>
                     </div>
-                    <div class="block it">
+                    <div class="block it" id="statement-it" ordernum="1">
                         <h2>Dichiarazione curatoriale</h2>
                         <p>
                             Cosa significa vivere sul confine esterno della NATO
@@ -237,53 +237,53 @@
                             certezza di essere al sicuro.
                         </p>
                     </div>
-					<!-- CS end -->
+                    <!-- CS end -->
 
-                    <div class="block" style="height: 120px"></div>
+                    <div class="block blank" style="height: 120px"></div>
 
-					<!-- Events -->
-                    <div class="block en">
+                    <!-- Events -->
+                    <div class="block en" id="events-en" ordernum="5">
                         <h2>Events</h2>
                         <p>
                             Pre-opening Biennale May 8 and 9 (by invitation
                             only)<br />
-                            Opening Latvia Pavilion - May 8, at 2pm.
+                            Opening Latvia Pavilion May 8, at 2pm.
                         </p>
                     </div>
-					
-					<div class="block lv">
+
+                    <div class="block lv" id="events-lv" ordernum="5">
                         <h2>Notikumi</h2>
                         <p>
                             Biennāles atklāšana 8. un 9. maijā (tikai ar
                             ielūgumiem)
+                            <br />Latvijas paviljona atklāšana 8. maijā
+                            pl.14.00
                         </p>
-                        <p>Latvijas paviljona atklāšana - 8. maijā pl.14.00</p>
                     </div>
 
-                    <div class="block">
+                    <div class="block it" id="events-it" ordernum="5">
                         <h2>Eventi</h2>
                         <p>
                             Pre-apertura Biennale 8 e 9 maggio (solo su invito)
-                        </p>
-                        <p>
-                            Apertura Padiglione Lettonia – 8 maggio alle 14.00
+                            <br />
+                            Apertura Padiglione Lettonia 8 maggio alle 14.00
                         </p>
                     </div>
-					<!-- Events end -->
+                    <!-- Events end -->
 
-                    <div class="block">
+                    <div class="block" ordernum="6">
                         <h2 class="en">Thanks to</h2>
-						<h2 class="lv">Pateicība</h2>
-						<h2 class="it">Ringraziamenti</h2>
+                        <h2 class="lv">Pateicība</h2>
+                        <h2 class="it">Ringraziamenti</h2>
                         <p>
                             Andreas Ruby, Solvita Kārkliņa, Zane
                             Saulīte-Zvaigzne, Elīna Kursīte, Normunds Tirāns,
-                            Jans Veļičko, Siim Porila, Laura Mārtinsone, (?)
-                            Māris Tūtins, (?) Ieva Karlsberga, 27.KAB KAR MV
-                            Serž. Juris Dārziņš
+                            Jans Veļičko, Siim Porila, Laura Mārtinsone, Māris
+                            Tūtins, Ieva Karlsberga, 27.KAB KAR MV Serž. Juris
+                            Dārziņš
                         </p>
                     </div>
-                    <div class="block" style="height: 120px"></div>
+                    <div class="block blank" style="height: 50px"></div>
                     <div
                         class="block"
                         style="
@@ -292,23 +292,22 @@
                             align-items: center;
                             flex-direction: column;
                         "
+                        ordernum="9"
                     >
                         <h2 class="en">Commissioned by</h2>
-						<h2 class="lv">Pasūtītājs</h2>
-						<h2 class="it">Commissionato da</h2>
-                        <img src="km.png" style="height: 120px" />
-                    </div>
-                    <div class="block">
-                        <h2 class="en">Supported by</h2>
-						<h2 class="lv">Atbalstītāji</h2>
-						<h2 class="it">Supportato da</h2>
+                        <h2 class="lv">Pasūtītājs</h2>
+                        <h2 class="it">Commissionato da</h2>
+                        <img src="logo/km.png" style="height: 120px" />
                     </div>
                 </div>
-                <div class="section r">
-                    <div class="block" style="height: 150px"></div>
 
-					<!-- Team -->
-                    <div class="block en">
+                <!-- ---------------------------------------------------------- -->
+
+                <div class="section r">
+                    <div class="block blank" style="height: 150px"></div>
+
+                    <!-- Team -->
+                    <div class="block en" id="team-en" ordernum="2">
                         <h2>Team</h2>
                         <h3>Curators</h3>
                         <h4>Liene Jākobsone</h4>
@@ -345,7 +344,7 @@
                             Architecture Biennial in Timisoara, Romania.
                         </p>
                     </div>
-					<div class="block lv">
+                    <div class="block lv" id="team-lv" ordernum="2">
                         <h2>Komanda</h2>
                         <h3>Kuratores</h3>
                         <h4>Liene Jākobsone</h4>
@@ -365,19 +364,22 @@
                         <p>
                             Berlīnē strādājoša kuratore, arhitektūras publiciste
                             un izdevniecības Ruby Press līdzdibinātāja. Kā
-                            kuratore realizējusi virkni izstāžu, ieskatot Druot,
-                            Lacaton & Vassal – Tour Bois le Prêtre Vācijas
-                            Arhitektūras muzejā DAM; Treasures in Disguise,
-                            Montenegro paviljons 14. starptautiskajā
-                            arhitektūras izstādē La Biennale Architettura; Never
-                            Demolish, Kopenhāgenas Arhitektūras festivālā;
-                            Together! The New Architecture of the Collective,
-                            Vitra dizaina muzejā. 2020.gadā viņa bija
+                            kuratore realizējusi virkni izstāžu, ieskatot
+                            <i>Druot, Lacaton & Vassal – Tour Bois le Prêtre</i>
+                            Vācijas Arhitektūras muzejā DAM;
+                            <i>Treasures in Disguise</i>, Montenegro paviljons
+                            14. starptautiskajā arhitektūras izstādē La Biennale
+                            Architettura; <i>Never Demolish</i>, Kopenhāgenas
+                            Arhitektūras festivālā;
+                            <i
+                                >Together! The New Architecture of the
+                                Collective</i
+                            >, Vitra dizaina muzejā. 2020.gadā viņa bija
                             līdzkuratore Timišoaras Arhitektūras biennālei Beta
-                            2020 Enough is Enough Rumānijā.
+                            2020 <i>Enough is Enough</i> Rumānijā.
                         </p>
                     </div>
-					<div class="block it">
+                    <div class="block it" id="team-it" ordernum="2">
                         <h2>Team</h2>
                         <h3>Curatrici</h3>
                         <h4>Liene Jākobsone</h4>
@@ -400,25 +402,28 @@
                             cofondatrice di Ruby Press. È relatrice e
                             moderatrice di dibattiti ed eventi
                             sull'architettura. Come curatrice ha realizzato
-                            numerose mostre, tra cui Druot, Lacaton & Vassal –
-                            Tour Bois le Prêtre, presso il Museo Tedesco
-                            dell'Architettura DAM; Treasures in Disguise, il
-                            padiglione del Montenegro alla 14a Biennale
-                            Architettura; Never Demolish al Festival di
-                            Architettura di Copenhagen; Together! The New
-                            Architecture of the Collective, presso il Vitra
-                            Design Museum. Nel 2020 è stata co-curatrice di
-                            Enough is Enough per Beta – Biennale di Architettura
-                            di Timisoara, Romania.
+                            numerose mostre, tra cui
+                            <i>Druot, Lacaton & Vassal – Tour Bois le Prêtre</i
+                            >, presso il Museo Tedesco dell'Architettura DAM;
+                            <i>Treasures in Disguise</i>, il padiglione del
+                            Montenegro alla 14a Biennale Architettura;
+                            <i>Never Demolish</i> al Festival di Architettura di
+                            Copenhagen;
+                            <i
+                                >Together! The New Architecture of the
+                                Collective</i
+                            >, presso il Vitra Design Museum. Nel 2020 è stata
+                            co-curatrice di <i>Enough is Enough</i> per Beta –
+                            Biennale di Architettura di Timisoara, Romania.
                         </p>
                     </div>
-					
-					<!-- Team end -->
 
-                    <div class="block">
+                    <!-- Team end -->
+
+                    <div class="block" ordernum="3">
                         <h3 class="en">Design team</h3>
-						<h3 class="lv">Dizaina komanda</h3>
-						<h3 class="it">Design team</h3>
+                        <h3 class="lv">Dizaina komanda</h3>
+                        <h3 class="it">Design team</h3>
                         <p>
                             <a href="https://sampling.lv" target="_blank"
                                 >SAMPLING</a
@@ -431,83 +436,108 @@
                             Marija Katrīna Dambe, Florian Betat
                         </p>
                     </div>
-                    <div class="block">
+                    <div class="block" ordernum="4">
                         <h3 class="en">Project management</h3>
-						<h3 class="lv">Projekta vadība</h3>
-						<h3 class="it">Gestione del progetto</h3>
+                        <h3 class="lv">Projekta vadība</h3>
+                        <h3 class="it">Gestione del progetto</h3>
 
                         <p>Liene Jākobsone, Laine Nameda Lazda</p>
-                        
-						<h3 class="en">Communication</h3>
-						<h3 class="lv">Komunikācija</h3>
-						<h3 class="it">Comunicazione</h3>
-                        
-						<p>Laura Ziemele</p>
-                        
-						<h3 class="en">Translation</h3>
-                        <h3 class="lv">Tulkojumi</h3>
-						<h3 class="it">Traduzione</h3>
 
-						<p>Laura Ziemele, Rita Tura</p>
-                        
-						<h3 class="en">Commissioner</h3>
-						<h3 class="lv">Komisārs</h3>
-						<h3 class="it">Commissario</h3>
+                        <h3 class="en">Communication</h3>
+                        <h3 class="lv">Komunikācija</h3>
+                        <h3 class="it">Comunicazione</h3>
+
+                        <p>Laura Ziemele</p>
+
+                        <h3 class="en">Translation</h3>
+                        <h3 class="lv">Tulkojumi</h3>
+                        <h3 class="it">Traduzione</h3>
+
+                        <p>Laura Ziemele, Rita Tura</p>
+
+                        <h3 class="en">Commissioner</h3>
+                        <h3 class="lv">Komisārs</h3>
+                        <h3 class="it">Commissario</h3>
 
                         <p>
                             Jānis Dripe<br />
                             Ministry of Culture of the Republic of Latvia
                         </p>
                     </div>
-					
-					<!-- Contacts -->
-                    <div class="block en">
+
+                    <!-- Contacts -->
+                    <div class="block en" id="press-en" ordernum="7">
                         <h2>Contacts</h2>
                         <p>Inquiries: info@sampling.lv</p>
                     </div>
-					<div class="block lv">
-						<h2>Kontakti</h2>
-						<p>Saziņai: info@sampling.lv</p>
+                    <div class="block lv" id="press-lv" ordernum="7">
+                        <h2>Kontakti</h2>
+                        <p>Saziņai: info@sampling.lv</p>
                     </div>
-					<div class="block it">
-						<h2>Contatti</h2>
-						<p>Scrivi a: info@sampling.lv</p>
-					</div>
-					<!-- Contacts end -->
+                    <div class="block it" id="press-it" ordernum="7">
+                        <h2>Contatti</h2>
+                        <p>Scrivi a: info@sampling.lv</p>
+                    </div>
+                    <!-- Contacts end -->
 
-					<!-- Visit -->
-					<div class="block en">
-						<h2>Visit</h2>
+                    <!-- Visit -->
+                    <div class="block en" ordernum="8">
+                        <h2>Visit</h2>
                         <p>
                             Arsenale di Venezia, Artiglierie<br />May 10 -
                             November 23, 2025<br />
                             Closed on Mondays (except 12 May and 17 November)
                         </p>
                     </div>
-					<div class="block lv">
+                    <div class="block lv" ordernum="8">
                         <h2>Apmeklē</h2>
-                        <p>Venēcijas Arsenāls, Artiglierie</p>
-                        <p>10. maijs - 23. novembris, 2025</p>
                         <p>
+                            Venēcijas Arsenāls, Artiglierie<br />
+                            10. maijs - 23. novembris, 2025<br />
                             Slēgts pirmdienās (izņemot 12. maiju un 17.
                             novembri)
                         </p>
                     </div>
-					<div class="block it">
+                    <div class="block it" ordernum="8">
                         <h2>Visita</h2>
-                        <p>Arsenale di Venezia, Artiglierie</p>
-                        <p>10 maggio - 23 novembre 2025</p>
-                        <p>Chiuso il lunedì (tranne 12 maggio e 17 novembre)</p>
+                        <p>
+                            Arsenale di Venezia, Artiglierie<br />
+                            10 maggio - 23 novembre 2025<br />
+                            Chiuso il lunedì (tranne 12 maggio e 17 novembre)
+                        </p>
                     </div>
-					<!-- Visit end -->
+                    <!-- Visit end -->
+                    <div class="block blank" style="height: 150px"></div>
+                </div>
+                <div class="section l"></div>
+                <div class="section r">
+                    <div class="block" ordernum="9">
+                        <h2 class="en">Supported by</h2>
+                        <h2 class="lv">Atbalstītāji</h2>
+                        <h2 class="it">Supportato da</h2>
+                    </div>
+                </div>
+                <div class="logos">
+                    <img src="logo/silman.png" />
+                    <img src="logo/kurbads.png" />
+                    <img src="logo/latvijasfinieris.png" />
+                    <img src="logo/kursi.png" />
+                    <img
+                        src="logo/nbs.png"
+                        style="height: 120px; max-height: none"
+                    />
                 </div>
             </div>
-            <div class="footer">
-                <p>
-                    Website development:
-                    <a href="https://pre1ude.dev" target="_blank">Pre1ude</a>
-                </p>
-            </div>
+			<div id="mobile-section"></div>
+        </div>
+
+        <div class="footer">
+            <p>
+                <span class="en">Website development:</span>
+                <span class="lv">Mājaslapas izstrāde:</span>
+                <span class="it">Sviluppo sito web:</span>
+                <a href="https://pre1ude.dev" target="_blank">Pre1ude</a>
+            </p>
         </div>
 
         <div class="back-to-top down" id="btt" onclick="scrollToTop()">
