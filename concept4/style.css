@@ -124,7 +124,7 @@ ul {
     top: -50%;
     left: -50%;
     z-index: -1;
-    animation: glide ease-in-out 800s infinite;
+    animation: glide ease-in-out 1000s infinite;
 }
 
 .content {

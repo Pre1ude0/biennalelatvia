@@ -15,21 +15,25 @@ function setLanguage(language) {
         document.body.classList.remove("lang-lv");
         document.body.classList.add("lang-en");
         lang = "en";
+		document.documentElement.lang = "en";
     } else if (language === "it") {
         document.body.classList.add("lang-it");
         document.body.classList.remove("lang-lv");
         document.body.classList.remove("lang-en");
         lang = "it";
+		document.documentElement.lang = "it";
     } else if (language === "lv") {
         document.body.classList.remove("lang-it");
         document.body.classList.add("lang-lv");
         document.body.classList.remove("lang-en");
         lang = "lv";
+		document.documentElement.lang = "lv";
     } else {
         document.body.classList.remove("lang-it");
         document.body.classList.remove("lang-lv");
         document.body.classList.add("lang-en");
         lang = "en";
+		document.documentElement.lang = "en";
     }
 }
 
