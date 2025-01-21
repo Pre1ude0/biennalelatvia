@@ -97,6 +97,16 @@ function scrollToItem(item) {
     scrollTo({ top: y, behavior: "smooth", block: "start" });
 }
 
+function toggleBackground() {
+	let background = document.getElementsByClassName("bg")[0];
+	background.classList.toggle("hidden");
+}
+
+function togglePause() {
+	let background = document.getElementsByClassName("bg")[0];
+	background.classList.toggle("paused");
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     let startTime = Math.random() * 100;
     let background = document.getElementsByClassName("bg")[0];
@@ -122,6 +132,18 @@ document.addEventListener("DOMContentLoaded", function () {
     setLanguage(window.location.hash.substring(1));
 
     generateMobileLayout();
+
+	if (document.getElementById('pause-toggle').checked) {
+		togglePause();
+	}
+	if (document.getElementById('background-toggle').checked) {
+		toggleBackground();
+	}
+
+	document.getElementById("pause-toggle").addEventListener("change", togglePause);
+	document.getElementById("pause-toggle-text").addEventListener("click", togglePause);
+	document.getElementById("background-toggle").addEventListener("change", toggleBackground);
+	document.getElementById("background-toggle-text").addEventListener("click", toggleBackground);
 });
 
 window.scrollToTop = scrollToTop;

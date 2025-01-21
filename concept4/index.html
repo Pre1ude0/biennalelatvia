@@ -11,43 +11,70 @@
         <link rel="stylesheet" href="https://use.typekit.net/met5msz.css" />
     </head>
     <body>
+        <div class="accessibility-options">
+            <div>
+                <input type="checkbox" id="pause-toggle" /><span onclick="document.getElementById('pause-toggle').checked = !document.getElementById('pause-toggle').checked" id="pause-toggle-text">Pause background</span>
+            </div>
+            <div>
+                <input type="checkbox" id="background-toggle" /><span onclick="document.getElementById('background-toggle').checked = !document.getElementById('background-toggle').checked" id="background-toggle-text">Disable
+                background</span>
+            </div>
+			<div class="close" onclick="document.querySelector('.accessibility-options').style.display = 'none'">X</div>
+        </div>
         <div class="top-bar">
             <p onclick="scrollToItem('team')">
-				<span class="en">Team</span>
-				<span class="lv">Komanda</span>
-				<span class="it">Team</span>
-			</p>
+                <span class="en">Team</span>
+                <span class="lv">Komanda</span>
+                <span class="it">Team</span>
+            </p>
             <div class="divider">-</div>
             <p onclick="scrollToItem('events')">
-				<span class="en">Events</span>
-				<span class="lv">Notikumi</span>
-				<span class="it">Eventi</span>
-			</p>
+                <span class="en">Events</span>
+                <span class="lv">Notikumi</span>
+                <span class="it">Eventi</span>
+            </p>
             <div class="divider">-</div>
             <p onclick="scrollToItem('press')">
-				<span class="en">Press</span>
-				<span class="lv">Medijiem</span>
-				<span class="it">Stampa</span>
-			</p>
+                <span class="en">Press</span>
+                <span class="lv">Medijiem</span>
+                <span class="it">Stampa</span>
+            </p>
         </div>
 
         <div class="content">
             <div class="logo">
                 <div class="languages en">
-                    <img src="lenta.svg" alt="language selection" /><a href="#lv">Lv</a
+                    <img src="lenta.svg" alt="language selection" /><a
+                        href="#lv"
+                        >Lv</a
                     ><a href="#it">It</a>
                 </div>
                 <div class="languages lv">
-                    <img src="lenta.svg" alt="valodas izvele" /><a href="#en">En</a
+                    <img src="lenta.svg" alt="valodas izvele" /><a href="#en"
+                        >En</a
                     ><a href="#it">It</a>
                 </div>
                 <div class="languages it">
-                    <img src="lenta.svg" alt="selezione della lingua" /><a href="#lv">Lv</a
+                    <img src="lenta.svg" alt="selezione della lingua" /><a
+                        href="#lv"
+                        >Lv</a
                     ><a href="#en">En</a>
                 </div>
-                <img src="logo.png" alt="Venice Biennale of Architecture logo" class="en" />
-				<img src="logo.png" alt="Venēcijas arhitektūras biennāles logo" class="lv" />
-				<img src="logo.png" alt="Biennale di Architettura di Venezia" class="it" />
+                <img
+                    src="logo.png"
+                    alt="Venice Biennale of Architecture logo"
+                    class="en"
+                />
+                <img
+                    src="logo.png"
+                    alt="Venēcijas arhitektūras biennāles logo"
+                    class="lv"
+                />
+                <img
+                    src="logo.png"
+                    alt="Biennale di Architettura di Venezia"
+                    class="it"
+                />
             </div>
             <div class="title en">
                 <h1>
@@ -268,8 +295,7 @@
                         <p>
                             Biennāles atklāšana 8. un 9. maijā (tikai ar
                             ielūgumiem)
-                            <br />Latvijas paviljona atklāšana 8. maijā
-                            pl.14.00
+                            <br />Latvijas paviljona atklāšana 8. maijā pl.14.00
                         </p>
                     </div>
 
@@ -309,9 +335,24 @@
                         <h2 class="en">Commissioned by</h2>
                         <h2 class="lv">Pasūtītājs</h2>
                         <h2 class="it">Commissionato da</h2>
-                        <img class="en" src="logo/km-en.png" alt="Logo of Latvian Ministry Of culture" style="height: 120px" />
-						<img class="it" src="logo/km-en.png" alt="Logo del Ministero della Cultura lettone"style="height: 120px" />
-						<img class="lv" src="logo/km.png" alt="Latvijas Kultūras ministrijas logotips" style="height: 120px" />
+                        <img
+                            class="en"
+                            src="logo/km-en.png"
+                            alt="Logo of Latvian Ministry Of culture"
+                            style="height: 120px"
+                        />
+                        <img
+                            class="it"
+                            src="logo/km-en.png"
+                            alt="Logo del Ministero della Cultura lettone"
+                            style="height: 120px"
+                        />
+                        <img
+                            class="lv"
+                            src="logo/km.png"
+                            alt="Latvijas Kultūras ministrijas logotips"
+                            style="height: 120px"
+                        />
                     </div>
                 </div>
 
@@ -439,13 +480,19 @@
                         <h3 class="lv">Dizaina komanda</h3>
                         <h3 class="it">Design team</h3>
                         <p>
-                            <strong><a href="https://sampling.lv" target="_blank"
-                                >SAMPLING</a
-                            ></strong>
+                            <strong
+                                ><a href="https://sampling.lv" target="_blank"
+                                    >SAMPLING</a
+                                ></strong
+                            >
                             &
-                            <strong><a href="https://nomadarchitects.lv" target="_blank"
-                                >NOMAD</a
-                            ><br /></strong>
+                            <strong
+                                ><a
+                                    href="https://nomadarchitects.lv"
+                                    target="_blank"
+                                    >NOMAD</a
+                                ><br
+                            /></strong>
                             Manten Devriendt, Liene Jākobsone,<br />
                             Marija Katrīna Dambe, Florian Betat
                         </p>
@@ -533,17 +580,23 @@
                 </div>
                 <div class="logos">
                     <img src="logo/silman.png" alt="SIA SILMAN LV logo" />
-                    <img src="logo/kurbads.png" alt="SIA KURBADS UN KO logo"/>
-                    <img src="logo/latvijasfinieris.png" alt="AS LATVIJAS FINIERIS logo" />
-                    <img src="logo/kursi.png" alt="SIA Tirdzniecības nams 'Kurši' logo"/>
+                    <img src="logo/kurbads.png" alt="SIA KURBADS UN KO logo" />
+                    <img
+                        src="logo/latvijasfinieris.png"
+                        alt="AS LATVIJAS FINIERIS logo"
+                    />
+                    <img
+                        src="logo/kursi.png"
+                        alt="SIA Tirdzniecības nams 'Kurši' logo"
+                    />
                     <img
                         src="logo/nbs.png"
                         style="height: 120px; max-height: none"
-						alt="Latvijas Nacionālie Bruņotie Spēki logo"
+                        alt="Latvijas Nacionālie Bruņotie Spēki logo"
                     />
                 </div>
             </div>
-			<div id="mobile-section"></div>
+            <div id="mobile-section"></div>
         </div>
 
         <div class="footer">
@@ -556,15 +609,13 @@
         </div>
 
         <div class="back-to-top down" id="btt" onclick="scrollToTop()">
-            <img class="pointer" src="roka.svg" alt="back / atpakal / prima"/>
+            <img class="pointer" src="roka.svg" alt="back / atpakal / prima" />
             <p class="en">back</p>
-			<p class="lv">uz augšu</p>
-			<p class="it">torna su</p>
+            <p class="lv">uz augšu</p>
+            <p class="it">torna su</p>
         </div>
 
-        <img class="bg en" src="pattern.svg" alt="background pattern" />
-		<img class="bg lv" src="pattern.svg" alt="fona raksts" />
-		<img class="bg it" src="pattern.svg" alt="sfondo pattern" />
+        <img class="bg" src="pattern.svg" alt="background pattern" />
         <script src="script.js"></script>
     </body>
 </html>
