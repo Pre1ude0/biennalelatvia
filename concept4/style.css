@@ -117,8 +117,8 @@ ul {
 }
 
 .bg {
-	opacity: 1;
-	background-color: var(--pav-gray);
+    opacity: 1;
+    background-color: var(--pav-gray);
     width: 5000px;
     aspect-ratio: 1;
     position: fixed;
@@ -126,15 +126,15 @@ ul {
     left: -50%;
     z-index: -1;
     animation: glide ease-in-out 1000s infinite;
-	transition: opacity 0.5s;
+    transition: opacity 0.5s;
 }
 
 .hidden.bg {
-	opacity: 0;
+    opacity: 0;
 }
 
 .paused.bg {
-	animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 .content {
@@ -163,7 +163,7 @@ ul {
 }
 
 .top-bar {
-	z-index: 10;
+    z-index: 10;
     top: 0;
     left: 0;
     position: fixed;
@@ -460,41 +460,41 @@ ul {
 }
 
 .accessibility-options {
-	font-family: Inconstant;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
-	padding: 10px;
-	padding-right: 20px;
-	background-color: var(--pav-gray);
-	border-radius: 0 0 10px 0;
-	border: 1px solid var(--pav-blue);
-	border-left: none;
-	border-top: none;
+    font-family: Inconstant;
+    position: absolute;
+    top: calc(50% - 50px);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    padding-right: 20px;
+    background-color: var(--pav-gray);
+    border-radius: 10px 0 0 10px;
+    border: 1px solid var(--pav-blue);
+    border-left: none;
+    border-top: none;
 
-	span {
-		cursor: pointer;
-		user-select: none;
-	}
+    span {
+        cursor: pointer;
+        user-select: none;
+    }
 
-	input {
-		margin-left: 0;
-		height: 15px;
-		aspect-ratio: 1;
-		cursor: pointer;
-	}
-	
-	.close {
-		position: absolute;
-		top: 0;
-		right: 0;
-		cursor: pointer;
-		font-size: 20pt;
-		color: darkred;
-		font-family: Arial;
-	}
+    input {
+        margin-left: 0;
+        height: 15px;
+        aspect-ratio: 1;
+        cursor: pointer;
+    }
+
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        font-size: 20pt;
+        color: darkred;
+        font-family: Arial;
+    }
 }
