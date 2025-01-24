@@ -462,7 +462,7 @@ ul {
 .accessibility-options {
     font-family: Inconstant;
     position: absolute;
-    top: calc(50% - 50px);
+    top: calc(50vh - 50px);
     right: 0;
     display: flex;
     flex-direction: column;
@@ -473,8 +473,8 @@ ul {
     background-color: var(--pav-gray);
     border-radius: 10px 0 0 10px;
     border: 1px solid var(--pav-blue);
-    border-left: none;
-    border-top: none;
+    border-right: none;
+
 
     span {
         cursor: pointer;
