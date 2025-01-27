@@ -100,11 +100,15 @@ function scrollToItem(item) {
 function toggleBackground() {
 	let background = document.getElementsByClassName("bg")[0];
 	background.classList.toggle("hidden");
+	let accessibility = document.getElementsByClassName("accessibility-options")[0];
+	accessibility.classList.toggle("hidden");
 }
 
 function togglePause() {
 	let background = document.getElementsByClassName("bg")[0];
 	background.classList.toggle("paused");
+	let accessibility = document.getElementsByClassName("accessibility-options")[0];
+	accessibility.classList.toggle("paused");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -133,17 +137,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     generateMobileLayout();
 
-	if (document.getElementById('pause-toggle').checked) {
-		togglePause();
-	}
-	if (document.getElementById('background-toggle').checked) {
-		toggleBackground();
-	}
-
-	document.getElementById("pause-toggle").addEventListener("change", togglePause);
-	document.getElementById("pause-toggle-text").addEventListener("click", togglePause);
-	document.getElementById("background-toggle").addEventListener("change", toggleBackground);
-	document.getElementById("background-toggle-text").addEventListener("click", toggleBackground);
+	document.getElementById("pause-toggle").addEventListener("click", togglePause);
+	document.getElementById("background-toggle").addEventListener("click", toggleBackground);
 });
 
 window.scrollToTop = scrollToTop;

@@ -460,41 +460,34 @@ ul {
 }
 
 .accessibility-options {
-    font-family: Inconstant;
-    position: absolute;
-    top: calc(50vh - 50px);
-    right: 0;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 10px;
-    padding-right: 20px;
-    background-color: var(--pav-gray);
-    border-radius: 10px 0 0 10px;
-    border: 1px solid var(--pav-blue);
-    border-right: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+	
+	div {
+		height: 100px;
+		aspect-ratio: 1;
+		cursor: pointer;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
 
+	#pause-toggle {
+		background-image: url("pauseon.png");
+	}
 
-    span {
-        cursor: pointer;
-        user-select: none;
-    }
+	#background-toggle {
+		background-image: url("eyeon.png");
+	}
+}
 
-    input {
-        margin-left: 0;
-        height: 15px;
-        aspect-ratio: 1;
-        cursor: pointer;
-    }
+.hidden #background-toggle {
+	background-image: url("eyeoff.png") !important;
+}
 
-    .close {
-        position: absolute;
-        top: 0;
-        right: 0;
-        cursor: pointer;
-        font-size: 20pt;
-        color: darkred;
-        font-family: Arial;
-    }
+.paused #pause-toggle {
+	background-image: url("pauseoff.png") !important;
 }

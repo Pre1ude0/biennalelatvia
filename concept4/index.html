@@ -11,16 +11,6 @@
         <link rel="stylesheet" href="https://use.typekit.net/met5msz.css" />
     </head>
     <body>
-        <div class="accessibility-options">
-            <div>
-                <input type="checkbox" id="pause-toggle" /><span onclick="document.getElementById('pause-toggle').checked = !document.getElementById('pause-toggle').checked" id="pause-toggle-text">Pause background</span>
-            </div>
-            <div>
-                <input type="checkbox" id="background-toggle" /><span onclick="document.getElementById('background-toggle').checked = !document.getElementById('background-toggle').checked" id="background-toggle-text">Disable
-                background</span>
-            </div>
-			<div class="close" onclick="document.querySelector('.accessibility-options').style.display = 'none'">X</div>
-        </div>
         <div class="top-bar">
             <p onclick="scrollToItem('team')">
                 <span class="en">Team</span>
@@ -359,7 +349,12 @@
                 <!-- ---------------------------------------------------------- -->
 
                 <div class="section r">
-                    <div class="block blank" style="height: 150px"></div>
+                    <div class="block">
+                        <div class="accessibility-options">
+							<div id="pause-toggle" alt="pause"></div>
+							<div id="background-toggle" alt="eye"></div>
+                        </div>
+                    </div>
 
                     <!-- Team -->
                     <div class="block en" id="team-en" ordernum="2">
