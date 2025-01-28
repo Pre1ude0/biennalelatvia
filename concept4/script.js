@@ -107,8 +107,6 @@ function toggleBackground() {
 function togglePause() {
 	let background = document.getElementsByClassName("bg")[0];
 	background.classList.toggle("paused");
-	let accessibility = document.getElementsByClassName("accessibility-options")[0];
-	accessibility.classList.toggle("paused");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
