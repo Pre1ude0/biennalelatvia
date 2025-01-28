@@ -148,7 +148,7 @@ ul {
 .footer {
     position: absolute;
     left: 10px;
-    top: calc(100% - 50px);
+    top: calc(100% - 70px);
     font-family: Inconstant;
     width: fit-content;
 
@@ -522,16 +522,16 @@ ul {
         top: auto;
         height: 30px;
         width: calc(100% - 10px);
-        background-color: black;
+        background-color: var(--pav-gray);
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: flex-start;
 		gap: 10px;
         align-items: center;
-		padding-right: 10px;
+		padding-left: 10px;
 		z-index: 100;
 
         h3 {
-            color: white;
+            color: black;
         }
 
 		.acc-buttons {
@@ -540,7 +540,7 @@ ul {
 		}
 
         .acc-buttons {
-            filter: invert(1);
+            /* filter: invert(1); */
         }
     }
 }
