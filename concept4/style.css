@@ -312,6 +312,7 @@ ul {
         text-align: center;
         /* margin-right: 13px; */
         color: var(--pav-blue);
+		font-weight: lighter;
     }
 
     h3 {
