@@ -43,6 +43,12 @@
 }
 
 @font-face {
+    font-family: "antiquarian-scribe", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
     font-family: Inter;
     src: url(Inter.ttf);
     font-weight: 400;
@@ -308,11 +314,11 @@ ul {
 
 .block {
     h2 {
-        font-family: Alfa-Owner;
+        font-family: "antiquarian-scribe";
         text-align: center;
         /* margin-right: 13px; */
         color: var(--pav-blue);
-		font-weight: lighter;
+		font-size: 25pt;
     }
 
     h3 {
@@ -526,19 +532,19 @@ ul {
         background-color: var(--pav-gray);
         flex-direction: row;
         justify-content: flex-start;
-		gap: 10px;
+        gap: 10px;
         align-items: center;
-		padding-left: 10px;
-		z-index: 100;
+        padding-left: 10px;
+        z-index: 100;
 
         h3 {
             color: black;
         }
 
-		.acc-buttons {
-			width: fit-content;
-			gap: 5px;
-		}
+        .acc-buttons {
+            width: fit-content;
+            gap: 5px;
+        }
 
         .acc-buttons {
             /* filter: invert(1); */
