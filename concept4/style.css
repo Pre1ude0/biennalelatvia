@@ -185,14 +185,16 @@ ul {
         width: 10px;
         user-select: none;
         color: var(--pav-blue);
-        font-family: Alfa-Owner;
+        font-family: "antiquarian-scribe";
+		font-size: 30pt;
     }
     p {
         color: var(--pav-blue);
-        font-family: Alfa-Owner;
+        font-family: "antiquarian-scribe";
         text-decoration: none;
         padding: 0;
         margin: 0;
+		font-size: 30pt;
     }
 }
 
@@ -224,15 +226,15 @@ ul {
         a {
             color: var(--pav-blue);
             position: absolute;
-            font-family: Alfa-Owner;
-            font-size: 20pt;
+            font-family: "antiquarian-scribe";
+            font-size: 30pt;
             text-decoration: none;
             transition: transform 0.2s;
         }
 
         :nth-child(2) {
-            top: 20px;
-            left: 34px;
+            top: 11px;
+            left: 38px;
             transform: rotate(-18deg) scale(1);
 
             &:hover {
@@ -241,12 +243,12 @@ ul {
         }
 
         :nth-child(3) {
-            top: 25px;
-            left: 90px;
-            transform: rotate(8deg);
+            top: 16px;
+            left: 93px;
+            transform: rotate(4deg);
 
             &:hover {
-                transform: rotate(8deg) scale(1.2);
+                transform: rotate(4deg) scale(1.2);
             }
         }
     }
@@ -263,18 +265,18 @@ ul {
             }
 
             a {
-                font-size: 16pt;
+                font-size: 24pt;
             }
 
             :nth-child(2) {
-                top: 14px;
-                left: 25px;
+                top: 7px;
+                left: 28px;
                 transform: rotate(-18deg);
             }
 
             :nth-child(3) {
-                top: 18px;
-                left: 66px;
+                top: 11px;
+                left: 69px;
                 transform: rotate(8deg);
             }
         }
@@ -318,7 +320,7 @@ ul {
         text-align: center;
         /* margin-right: 13px; */
         color: var(--pav-blue);
-		font-size: 25pt;
+        font-size: 25pt;
     }
 
     h3 {
