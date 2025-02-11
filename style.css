@@ -430,7 +430,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     height: fit-content;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 100px;
     padding: 0 20px;
@@ -439,7 +439,7 @@ ul {
     img {
         display: block;
         max-height: 90px;
-        max-width: 150px;
+        max-width: 170px;
         object-fit: contain;
     }
 }
