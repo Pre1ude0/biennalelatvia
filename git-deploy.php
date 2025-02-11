@@ -23,10 +23,10 @@ EOT;
 
 // Check whether client is allowed to trigger an update
 
-$allowed_ips = array(
-	'207.97.227.', '50.57.128.', '108.171.174.', '50.57.231.', '204.232.175.', '192.30.252.', // GitHub
-);
-$allowed = false;
+// $allowed_ips = array(
+//	"192.30.252.0/22", "185.199.108.0/22", "140.82.112.0/20", '50.57.231.', '204.232.175.', '192.30.252.', // GitHub
+// );
+$allowed = true;
 
 $headers = apache_request_headers();
 
@@ -35,13 +35,6 @@ if (@$headers["X-Forwarded-For"]) {
     $ip  = $ips[0];
 } else {
     $ip = $_SERVER['REMOTE_ADDR'];
-}
-
-foreach ($allowed_ips as $allow) {
-    if (stripos($ip, $allow) !== false) {
-        $allowed = true;
-        break;
-    }
 }
 
 if (!$allowed) {
