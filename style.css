@@ -2,6 +2,7 @@
     .it {
         display: none !important;
     }
+
     .lv {
         display: none !important;
     }
@@ -11,6 +12,7 @@
     .en {
         display: none !important;
     }
+
     .it {
         display: none !important;
     }
@@ -20,6 +22,7 @@
     .en {
         display: none !important;
     }
+
     .lv {
         display: none !important;
     }
@@ -72,33 +75,43 @@
     0% {
         -webkit-transform: translateX(0) translateY(0) rotate(0);
     }
+
     10% {
         -webkit-transform: translateX(-30%) translateY(-70%) rotate(40deg);
     }
+
     20% {
         -webkit-transform: translateX(-45%) translateY(-50%) rotate(45deg);
     }
+
     30% {
         -webkit-transform: translateX(-35%) translateY(-55%) rotate(180deg);
     }
+
     40% {
         -webkit-transform: translateX(-50%) translateY(-50%) rotate(250deg);
     }
+
     50% {
         -webkit-transform: translateX(-40%) translateY(-60%) rotate(315deg);
     }
+
     60% {
         -webkit-transform: translateX(-50%) translateY(-55%) rotate(369deg);
     }
+
     70% {
         -webkit-transform: translateX(-55%) translateY(-45%) rotate(405deg);
     }
+
     80% {
         -webkit-transform: translateX(-35%) translateY(-50%) rotate(430deg);
     }
+
     90% {
         -webkit-transform: translateX(-40%) translateY(-60%) rotate(450deg);
     }
+
     100% {
         -webkit-transform: translateX(0) translateY(0) rotate(720deg);
     }
@@ -180,21 +193,23 @@ ul {
     display: none;
     flex-direction: row;
     justify-content: space-evenly;
+
     /* gap: 1%; */
     .divider {
         width: 10px;
         user-select: none;
         color: var(--pav-blue);
         font-family: "antiquarian-scribe";
-		font-size: 30pt;
+        font-size: 30pt;
     }
+
     p {
         color: var(--pav-blue);
         font-family: "antiquarian-scribe";
         text-decoration: none;
         padding: 0;
         margin: 0;
-		font-size: 30pt;
+        font-size: 30pt;
     }
 }
 
@@ -216,6 +231,7 @@ ul {
 
     .languages {
         position: relative;
+
         img {
             position: absolute;
             top: 0;
@@ -294,6 +310,7 @@ ul {
 
 .title {
     height: fit-content;
+
     h1 {
         color: var(--pav-blue);
         font-size: 37pt;
