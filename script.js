@@ -15,30 +15,36 @@ function setLanguage(language) {
         document.body.classList.remove("lang-lv");
         document.body.classList.add("lang-en");
         lang = "en";
-		document.documentElement.lang = "en";
+        document.documentElement.lang = "en";
     } else if (language === "it") {
         document.body.classList.add("lang-it");
         document.body.classList.remove("lang-lv");
         document.body.classList.remove("lang-en");
         lang = "it";
-		document.documentElement.lang = "it";
+        document.documentElement.lang = "it";
     } else if (language === "lv") {
         document.body.classList.remove("lang-it");
         document.body.classList.add("lang-lv");
         document.body.classList.remove("lang-en");
         lang = "lv";
-		document.documentElement.lang = "lv";
+        document.documentElement.lang = "lv";
     } else {
         document.body.classList.remove("lang-it");
         document.body.classList.remove("lang-lv");
         document.body.classList.add("lang-en");
         lang = "en";
-		document.documentElement.lang = "en";
+        document.documentElement.lang = "en";
     }
 }
 
 function generateMobileLayout() {
     const blocks = Array.from(document.getElementsByClassName("block"));
+
+    const logos = document.querySelectorAll(".logos");
+    for (let i = 0; i < logos.length; i++) {
+        blocks.push(logos[i]);
+
+    }
 
     let mobileSection = document.getElementById("mobile-section");
 
@@ -56,10 +62,10 @@ function generateMobileLayout() {
 
     blocks.forEach((block) => {
         mobileSection.appendChild(block.cloneNode(true));
-		block.id = block.id + "-bookmark";
+        block.id = block.id + "-bookmark";
     });
 
-	mobileSection.appendChild(document.querySelector(".logos").cloneNode(true));
+    // mobileSection.appendChild(document.querySelector(".logos").cloneNode(true));
 }
 
 function scrollToItem(item) {
@@ -98,15 +104,15 @@ function scrollToItem(item) {
 }
 
 function toggleBackground() {
-	let background = document.getElementsByClassName("bg")[0];
-	background.classList.toggle("hidden");
-	let accessibility = document.getElementsByClassName("accessibility-options")[0];
-	accessibility.classList.toggle("hidden");
+    let background = document.getElementsByClassName("bg")[0];
+    background.classList.toggle("hidden");
+    let accessibility = document.getElementsByClassName("accessibility-options")[0];
+    accessibility.classList.toggle("hidden");
 }
 
 function togglePause() {
-	let background = document.getElementsByClassName("bg")[0];
-	background.classList.toggle("paused");
+    let background = document.getElementsByClassName("bg")[0];
+    background.classList.toggle("paused");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -135,8 +141,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     generateMobileLayout();
 
-	document.getElementById("pause-toggle").addEventListener("click", togglePause);
-	document.getElementById("background-toggle").addEventListener("click", toggleBackground);
+    document.getElementById("pause-toggle").addEventListener("click", togglePause);
+    document.getElementById("background-toggle").addEventListener("click", toggleBackground);
 });
 
 window.scrollToTop = scrollToTop;
