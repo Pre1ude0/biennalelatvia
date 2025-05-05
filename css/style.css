@@ -518,11 +518,11 @@ ul {
     }
 
     #pause-toggle {
-        background-image: url("icon/play-pause.png");
+        background-image: url("../icon/play-pause.png");
     }
 
     #background-toggle {
-        background-image: url("icon/eye-open.png");
+        background-image: url("../icon/eye-open.png");
     }
 
     h3 {
@@ -533,7 +533,7 @@ ul {
 }
 
 .hidden #background-toggle {
-    background-image: url("icon/eye-closed.png") !important;
+    background-image: url("../icon/eye-closed.png") !important;
 }
 
 @media screen and (max-width: 800px) {
