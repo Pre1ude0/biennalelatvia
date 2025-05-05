@@ -41,7 +41,7 @@
 
 @font-face {
     font-family: Alfa-Owner;
-    src: url(AlfaownerScript-BoldItalic-LV.otf);
+    src: url(fonts/AlfaownerScript-BoldItalic-LV.otf);
     font-weight: 400;
 }
 
@@ -52,22 +52,8 @@
 }
 
 @font-face {
-    font-family: Inter;
-    src: url(Inter.ttf);
-    font-weight: 400;
-    font-style: regular;
-}
-
-@font-face {
-    font-family: Inter;
-    src: url(Inter.ttf);
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
     font-family: Inconstant;
-    src: url(Inconstant-Regular.otf);
+    src: url(fonts/Inconstant-Regular.otf);
     font-weight: 400;
 }
 
@@ -175,7 +161,8 @@ ul {
         color: black;
         text-decoration: underline;
 
-        &:hover {
+        &:hover,
+        &:focus {
             text-decoration: none;
         }
     }
@@ -253,7 +240,8 @@ ul {
             left: 38px;
             transform: rotate(-18deg) scale(1);
 
-            &:hover {
+            &:hover,
+            &:focus {
                 transform: rotate(-18deg) scale(1.2);
             }
         }
@@ -263,7 +251,8 @@ ul {
             left: 93px;
             transform: rotate(4deg);
 
-            &:hover {
+            &:hover,
+            &:focus {
                 transform: rotate(4deg) scale(1.2);
             }
         }
@@ -373,7 +362,8 @@ ul {
         color: black;
         text-decoration: underline;
 
-        &:hover {
+        &:hover,
+        &:focus {
             text-decoration: none;
         }
     }
@@ -470,6 +460,7 @@ ul {
 @media screen and (max-width: 800px) {
     body {
         flex-direction: column;
+        margin-bottom: 100px;
     }
 
     .paragraphs {
@@ -502,10 +493,14 @@ ul {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        border: none;
+        background-color: transparent;
 
         transition: transform 0.15s;
 
-        &:hover {
+        &:hover,
+        &:focus,
+        &:focus {
             transform: scale(1.1);
         }
 
@@ -523,11 +518,11 @@ ul {
     }
 
     #pause-toggle {
-        background-image: url("play-pause.png");
+        background-image: url("icon/play-pause.png");
     }
 
     #background-toggle {
-        background-image: url("eye-open.png");
+        background-image: url("icon/eye-open.png");
     }
 
     h3 {
@@ -538,7 +533,7 @@ ul {
 }
 
 .hidden #background-toggle {
-    background-image: url("eye-closed.png") !important;
+    background-image: url("icon/eye-closed.png") !important;
 }
 
 @media screen and (max-width: 800px) {
